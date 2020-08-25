@@ -23,9 +23,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * Created by sang on 2017/12/17.
- */
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired

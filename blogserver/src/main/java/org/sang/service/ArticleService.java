@@ -3,8 +3,11 @@ package org.sang.service;
 import org.sang.bean.Article;
 import org.sang.mapper.ArticleMapper;
 import org.sang.mapper.TagsMapper;
+import org.sang.service.serviceImpl.ArticleServiceImpl;
 import org.sang.utils.Util;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,16 +16,14 @@ import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by sang on 2017/12/20.
- */
+
 @Transactional
 @Service
-public class ArticleService {
+public class ArticleService implements ArticleServiceImpl {
     @Resource
     ArticleMapper articleMapper;
 
-   @Resource
+    @Resource
     TagsMapper tagsMapper;
 
     public int addNewArticle(Article article) {

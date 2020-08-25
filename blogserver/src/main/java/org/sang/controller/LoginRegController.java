@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * Created by sang on 2017/12/17.
- */
+
 @Controller
 public class LoginRegController {
 
