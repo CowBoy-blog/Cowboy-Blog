@@ -3,6 +3,7 @@ package org.sang.bean;
 import java.sql.Timestamp;
 import java.util.List;
 
+
 public class Article {
     private Long id;
     private String title;

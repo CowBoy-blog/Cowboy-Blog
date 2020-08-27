@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @Mapper
-@Repository("aaa")
+@Repository
 public interface ArticleMapper extends MapperUtil<Article> {
     int addNewArticle(Article article);
 
